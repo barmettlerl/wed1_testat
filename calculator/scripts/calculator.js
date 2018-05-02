@@ -1,7 +1,6 @@
-/**
- * core
- */
 let calculator = {
+
+    //var
     numberButtons: null,
     operators: null,
     commands: null,
@@ -11,6 +10,8 @@ let calculator = {
     term1: "",
     term2: "",
 
+
+    //UI
     setTerm: function(value){
         this.term1 += value;
         this.input.value = this.term1;
@@ -89,6 +90,8 @@ let calculator = {
         })
     },
 
+
+    //Core
     calculate: function (term1, term2, operator) {
         let solution = 0;
 
@@ -127,9 +130,6 @@ let calculator = {
 }
 
 
-/**
- * UI
- */
 window.addEventListener('load', function () {
     calculator.init();
 });
