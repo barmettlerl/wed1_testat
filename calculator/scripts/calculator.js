@@ -139,7 +139,7 @@ let calculator = {
                 break;
             case '/':
                 if(term1 === 0){
-                    this.output.value = "You've derstoryed the universe, thx";
+                    this.output.value = "You've destroyed the universe, thx";
                     return;
                 }else{
                     solution = term2 / term1;
