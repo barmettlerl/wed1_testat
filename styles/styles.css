@@ -231,26 +231,13 @@ video {
 }
 
 /*4. TR-Varianten*/
-.varianten {
-    margin-bottom: 10px;
-}
-
-.varianten ul {
+.varianten dt {
     list-style-type: none;
-}
-
-.varianten ul {
     color: #0160A0;
     font-weight: bold;
 }
 
-.varianten li > :first-child {
-    padding: 0 0 0 20px;
-    color: black;
-    font-weight: normal;
-}
-
-.varianten li > :first-child > ::before {
+.varianten dd::before {
     content: "⌖";
     padding-right: 5px;
 }
