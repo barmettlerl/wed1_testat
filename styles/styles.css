@@ -40,6 +40,10 @@ a:hover {
     text-decoration: none;
 }
 
+a:active {
+    color: #6395b7;
+}
+
 /*navigation*/
 h2 {
     font-size: 1.5em;
@@ -54,8 +58,8 @@ ul, ol, li, dt, dd {
 
 .navigation {
     background: #F6F6F6;
+    width: calc(101% - 0px);
     border: 1px solid #0160A0;
-    width: calc(100% + 10px);
     display: block;
     margin-left: -5px;
     margin-bottom: 30px;
@@ -270,7 +274,7 @@ tr:nth-child(even)  {
 /*6. iPhone calculator tricks*/
 .video iframe {
     width: 100%;
-    height: calc(56.25vw - 5rem);
+    height: calc(56.25vw - 1rem );
 }
 
 /*7. beste und schlechteste TR*/
