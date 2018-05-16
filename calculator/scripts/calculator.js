@@ -12,12 +12,13 @@ let calculator = {
     term2: "",
 
     setTerm: function(value){
+        'use strict';
         this.term1 += value;
         this.input.value = this.term1;
     },
 
     setOperator: function (elem) {
-
+        'use strict';
         if(this.operator === ''){
             this.operator = elem.value;
             this.output.value = this.term1 + " " + elem.value;
@@ -31,6 +32,7 @@ let calculator = {
     },
 
     clear: function () {
+        'use strict';
         this.operator = '';
         this.term1 = "";
         this.input.value = "";
@@ -39,7 +41,7 @@ let calculator = {
     },
 
     init: function () {
-
+        'use strict';
         this.numberButtons = document.querySelectorAll('.number');
         this.operatorButtons = document.querySelectorAll('.operator');
         this.commandButtons = document.querySelectorAll('.command');
@@ -61,6 +63,7 @@ let calculator = {
      * Stelle die Welcome-Nachricht initial dar
      */
     initWelcomeMessage: function() {
+        'use strict';
         document.querySelector("#output").value = "Welcome";
     },
 
@@ -68,6 +71,7 @@ let calculator = {
      * Blende die Welcome-Nachricht aus
      */
     hideWelcomeMessage: function() {
+        'use strict';
         document.querySelectorAll("form button").forEach(function(elem) {
             elem.addEventListener("click", function () {
                 if(document.querySelector("#output").value === "Welcome") {
@@ -78,30 +82,33 @@ let calculator = {
     },
 
     /**
-     * Blabla
+     * Beschreibung...
      * @param elements
      */
     instantiateEventsForTerm: function (elements) {
+        'use strict';
         let self = this;
 
         elements.forEach((elem) => {
             elem.addEventListener('click', function (event) {
                 self.setTerm(parseFloat(event.target.value));
-            })
-        })
+            });
+        });
     },
 
     instantiateEventForOperator: function (elements) {
+        'use strict';
         let self = this;
 
         elements.forEach((elem) => {
             elem.addEventListener('click', function (event) {
                 self.setOperator(event.target);
-            })
-        })
+            });
+        });
     },
 
     instantiateEventForCommands: function (elements) {
+        'use strict';
         let self = this;
 
         elements.forEach((elem) => {
@@ -112,11 +119,12 @@ let calculator = {
                 }else if(event.target.innerHTML === '=' ){
                     self.calculate(self.term1, self.term2, self.operator);
                 }
-            })
-        })
+            });
+        });
     },
 
     calculate: function (term1, term2, operator) {
+        'use strict';
         let solution = 0;
 
         if(term2 === ''){
@@ -150,12 +158,13 @@ let calculator = {
         this.setTerm(solution);
     }
 
-}
+};
 
 /**
  * UI
  */
 
 window.addEventListener('load', function () {
+    'use strict';
     calculator.init();
 });

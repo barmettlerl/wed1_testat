@@ -6,19 +6,19 @@
     <meta name="author" content="Wikipraktika">
     <meta name="publisher" content="Wikipraktika"/>
     <meta name="description" content="Taschenrechner: tragbare, handliche elektronische Rechenmaschine"/>
-    <link rel="shortcut icon" type="image/x-icon" href="media/icon-wikipraktika.png">
+    <link rel="icon" type="image/x-icon" href="media/icon-wikipraktika.png">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 
-<header>
+<header class="site">
     <a href=index.html><img class="logo" src="media/logo-wikipraktika.svg" alt="logo-wikipraktika"></a>
     <h1>Wikipraktika</h1>
 </header>
 <div class="container">
 
     <h2>Navigation</h2>
-    <div class="navigation">
+    <nav class="navigation">
         <ul>
             <li><a href="/de/">Hauptseite</a></li>
             <li><a href="/de/topics/">Themenportale</a></li>
@@ -49,7 +49,7 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </nav>
 
     <main>
         <!-- Schriftgrössenwechsler: optionale Aufgabe -->
@@ -62,10 +62,13 @@
 
         <div class="main">
             <section>
-                <h2>Taschenrechner</h2>
-                <!--Text-->
-                <h3>Taschenrechner</h3>
-                <div class="text">
+                <header>
+                    <h2>Taschenrechner</h2>
+                </header>
+                <article class="text">
+                    <header>
+                        <h3>Taschenrechner</h3>
+                    </header>
                     <p> Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine,
                         mit deren Hilfe numerische Berechnungen ausgeführt werden können.
                         Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen auch symbolische Mathematik
@@ -73,7 +76,7 @@
                     <p> Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und
                         LC-Displays als Anzeige und werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
 
-                    <figure>
+                    <figure class="text">
                         <img class="picture" src="media/900px-SCM_Marchant_calculator.jpg" alt="SCM Marchant calculator">
                         <figcaption>By <a class="figlink" href="https://commons.wikimedia.org/wiki/User:Bilby">Bilby</a> - Own work, <a class="figlink"
                                                                                                                                         href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>,
@@ -82,7 +85,9 @@
                         </figcaption>
                     </figure>
 
-                    <h4>Geschichte</h4>
+                    <header>
+                        <h4>Geschichte</h4>
+                    </header>
                     <p> Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach
                         tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und Rechenschiebern
                         befriedigt. Meist handelte es sich dabei um einfache Addiermaschinen. Auch
@@ -129,59 +134,72 @@
                     <p> Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen
                         Taschenrechnern voneinander abweichende Ergebnisse.</p>
 
-                    <small class="link">Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">
-                        de.wikipedia.org/wiki/Taschenrechner</a></small>
+                    <footer>
+                        <small class="link">Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">
+                            de.wikipedia.org/wiki/Taschenrechner</a></small>
+                    </footer>
 
-                </div>
+                </article>
             </section>
 
             <section>
-                <h3>Demonstration</h3>
-                <!--JavaScript - iframe-->
-                <div class="calculator">
-                    <iframe
-                            src="calculator/index.html">
-                    </iframe>
-                </div>
-
-                <div class="caption">
-                    Casino Mini von 1972
-                </div>
+                <article class="calculator">
+                    <header>
+                        <h3>Demonstration</h3>
+                    </header>
+                    <figure>
+                        <iframe
+                                src="calculator/index.html">
+                        </iframe>
+                        <figcaption>
+                            <div class="caption">
+                                Casino Mini von 1972
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
             </section>
 
             <section>
-                <h3>Bedienung des TI-Nspire CX CAS</h3>
-                <!--Video-->
-                <div class="video">
-                    <video controls poster="media/ti-nspire-cx-cas.png">
-                        <source src="media/TI-Nspire CX CAS 3D Model.mp4" type="video/mp4">
-                        <source src="media/TI-Nspire CX CAS 3D Model.webm" type="video/webm">
-                        <track src="media/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="English">
-                    </video>
-                </div>
+                <article class="video">
+                    <header>
+                        <h3>Bedienung des TI-Nspire CX CAS</h3>
+                    </header>
+                    <figure>
+                        <video controls poster="media/ti-nspire-cx-cas.png">
+                            <source src="media/TI-Nspire CX CAS 3D Model.mp4" type="video/mp4">
+                            <source src="media/TI-Nspire CX CAS 3D Model.webm" type="video/webm">
+                            <track src="media/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="English">
+                        </video>
+                        <figcaption>
+                            <aside class="caption">
+                                TI-Nspire CX CAS Demonstration
+                            </aside>
+                        </figcaption>
+                    </figure>
 
-                <aside class="caption">
-                    TI-Nspire CX CAS Demonstration
-                </aside>
+                    <footer>
+                        <small class="link">
+                            Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
+                            <a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a>
+                        </small>
 
-                <small class="link">
-                    Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
-                    <a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a>
-                </small>
-
-                <aside class="lastEdited">
-                    <span class="alignLeft">Zuletzt geändert von Philipp Graf</span>
-                    <span class="alignRight"><time datetime="2016-02-11 12:45"></time>
+                        <aside class="lastEdited">
+                            <span class="alignLeft">Zuletzt geändert von Philipp Graf</span>
+                            <span class="alignRight"><time datetime="2016-02-11 12:45"></time>
                             Donnerstag, 11. Februar 2016, 12:45</span>
-                    <div class="clearfix"></div>
-                </aside>
+                            <div class="clearfix"></div>
+                        </aside>
+                    </footer>
+                </article>
 
             </section>
 
             <section>
-                <h3>Taschenrechnervarianten</h3>
-                <!--Liste-->
-                <div class="varianten">
+                <article class="varianten">
+                    <header>
+                        <h3>Taschenrechnervarianten</h3>
+                    </header>
                     <ul>
                         <li>Einfach
                             <ul>
@@ -227,25 +245,26 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
+                    <footer>
+                        <small class="link">Taschenrechnervarianten, Source Wikipedia:
+                            <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a>
+                        </small>
 
-                <small class="link">Taschenrechnervarianten, Source Wikipedia:
-                    <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a>
-                </small>
-
-                <aside class="lastEdited">
-                    <span class="alignLeft">Zuletzt geändert von Gabriela Kant</span>
-                    <span class="alignRight"><time datetime="2016-02-11 10:09"></time>
+                        <aside class="lastEdited">
+                            <span class="alignLeft">Zuletzt geändert von Gabriela Kant</span>
+                            <span class="alignRight"><time datetime="2016-02-11 10:09"></time>
                             Donnerstag, 11. Februar 2016, 10:09</span>
-                    <div class="clearfix"></div>
-                </aside>
-
+                            <div class="clearfix"></div>
+                        </aside>
+                    </footer>
+                </article>
             </section>
 
             <section>
-                <h3>Zeitgewinn</h3>
-                <!--Tabelle & Diagramm-->
-                <div class="table">
+                <article class="table">
+                    <header>
+                        <h3>Zeitgewinn</h3>
+                    </header>
                     <table>
                         <caption>Zeitgewinn durch Benutzung eines Taschenrechners</caption>
                         <thead>
@@ -297,45 +316,54 @@
                         </tbody>
                     </table>
 
-                    <img class="diagramm" src="media/zeitgewinn.svg" alt="Zeitgewinn Diagramm" role="img">
+                    <figure>
+                        <object class="diagramm" data="media/zeitgewinn.svg" type="image/svg+xml" role="img"></object>
+                    </figure>
 
-                    <aside class="lastEdited">
-                        <span class="alignLeft">Zuletzt geändert von Leandra Gross</span>
-                        <span class="alignRight"><time datetime="2016-02-29 13:02"></time>
+                    <footer>
+                        <aside class="lastEdited">
+                            <span class="alignLeft">Zuletzt geändert von Leandra Gross</span>
+                            <span class="alignRight"><time datetime="2016-02-29 13:02"></time>
                             Freitag, 29. Februar 2016, 13:02</span>
-                        <div class="clearfix"></div>
-                    </aside>
-
-                </div>
+                            <div class="clearfix"></div>
+                        </aside>
+                    </footer>
+                </article>
             </section>
 
             <section>
-                <h3>iPhone calculator tricks</h3>
-                <!--Video mit iframe-->
-                <div class="video">
-                    <iframe
-                            src="https://www.youtube.com/embed/a7rcVgb41-0">
-                    </iframe>
-                </div>
+                <article class="video">
+                    <header>
+                        <h3>iPhone calculator tricks</h3>
+                    </header>
+                    <figure>
+                        <iframe
+                                src="https://www.youtube.com/embed/a7rcVgb41-0">
+                        </iframe>
+                        <figcaption>
+                            <aside id="linkGrey">iPhone Calculator Tricks  on YouTube:
+                                <a href="https://youtube.com/watch?v=a7rcVgb41-0">
+                                    youtube.com/watch?v=a7rcVgb41-0</a>
+                            </aside>
+                        </figcaption>
+                    </figure>
 
-                <aside id="linkGrey">iPhone Calculator Tricks  on YouTube:
-                    <a href="https://youtube.com/watch?v=a7rcVgb41-0">
-                        youtube.com/watch?v=a7rcVgb41-0</a>
-                </aside>
-
-                <aside class="lastEdited">
-                    <span class="alignLeft">Zuletzt geändert von Paul Sarner</span>
-                    <span class="alignRight"><time datetime="2016-02-10 18:38"></time>
+                    <footer>
+                                                <aside class="lastEdited">
+                            <span class="alignLeft">Zuletzt geändert von Paul Sarner</span>
+                            <span class="alignRight"><time datetime="2016-02-10 18:38"></time>
                             Donnerstag, 10. Februar 2016, 18:38</span>
-                    <div class="clearfix"></div>
-                </aside>
-
+                            <div class="clearfix"></div>
+                        </aside>
+                    </footer>
+                </article>
             </section>
 
             <section>
-                <h3>Die besten und schlechtesten Taschenrechner</h3>
-                <!--Text mit Liste-->
-                <div class="text">
+                <article class="text">
+                    <header>
+                        <h3>Die besten und schlechtesten Taschenrechner</h3>
+                    </header>
                     <p>In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:</p>
                     <div class="bestworst">
                         <ol>
@@ -353,23 +381,24 @@
                             <li>HG GO-ON</li>
                         </ol>
                     </div>
-
-                    <aside class="lastEdited">
-                        <span class="alignLeft">Zuletzt geändert von Petra Summer</span>
-                        <span class="alignRight"><time datetime="2016-02-11 14:13"></time>
+                    <footer>
+                        <aside class="lastEdited">
+                            <span class="alignLeft">Zuletzt geändert von Petra Summer</span>
+                            <span class="alignRight"><time datetime="2016-02-11 14:13"></time>
                             Donnerstag, 11. Februar 2016, 14:13</span>
-                        <div class="clearfix"></div>
-                    </aside>
-
-                </div>
+                            <div class="clearfix"></div>
+                        </aside>
+                    </footer>
+                </article>
             </section>
 
             <section>
-                <h3>Taschenrechner suchen nach Modell</h3>
-                <!--Form-->
-                <form>
-                    <div>
-                        <input class="formSearchBar" type="text" id="calculator" name="calculator" list="calculatorList"
+                <article>
+                    <header>
+                        <h3>Taschenrechner suchen nach Modell</h3>
+                    </header>
+                    <form>
+                        <input class="formSearchBar" type="search" id="calculator" name="calculator" list="calculatorList"
                                pattern="[Mm]exico Instrument TI 30|[Mm]exico Instrument TI 32|[Mm]exico Instrument D\*D|
                                [Cc]asino UX5|[Cc]asino TZZ|[Cc]asino Basic|[Hh]G Calc\+\+|[Hh]G Productive|[Hh]G GO-ON">
                         <datalist id="calculatorList">
@@ -384,118 +413,119 @@
                             <option>HG GO-ON</option>
                         </datalist>
                         <button type="button" name="search" value="search"><span class="searchIcon"></span>Search</button>
-                    </div>
-                </form>
+                    </form>
 
-                <form>
-                    <h2>Neuen Autor registrieren</h2>
-                    <fieldset class="autor">
-                        <legend>Autor</legend>
-                        <div class="titleBox">
-                            <label for="radioButtonHerr" class="formLabel">Herr
-                                <input type="radio" id="radioButtonHerr" name="title" value="Herr" required
-                                       class="formRadioButton" checked>
-                            </label>
-                        </div>
-                        <div class="titleBox">
-                            <label for="radioButtonFrau" class="formLabel">Frau
-                                <input type="radio" id="radioButtonFrau" name="title" value="Frau" required
-                                       class="formRadioButton">
-                            </label>
-                        </div>
-                        <div class="formLabel">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="formInput">
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="formLabel">
-                            <label for="mail">E-mail</label>
-                        </div>
-                        <div class="formInput">
-                            <input type="email" id="mail" name="mail" required>
-                        </div>
-                        <div class="formLabel">
-                            <label for="website">Website</label>
-                        </div>
-                        <div class="formInput">
-                            <input type="url" id="website" name="website" required>
-                        </div>
-                        <div class="formLabel">
-                            <label for="birthday">Geburtsdatum</label>
-                        </div>
-                        <div class="formInput">
-                            <input placeholder="" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                                   id="birthday" name="birthday" required>
-                        </div>
-                        <div class="formLabel">
-                            <label for="nationality">Nationalität</label>
-                        </div>
-                        <div class="formSelect">
-                            <select id="nationality" name="nationality" required>
-                                <option value="" disabled selected>-- Wählen --</option>
-                                <option>Switzerland</option>
-                                <option>Deutschland</option>
-                                <option>Frankreich</option>
-                                <option>Italien</option>
-                                <option>Österreich</option>
-                            </select>
-                        </div>
-                        <div class="formLabel">
-                            <label for="profiltext"><span>Profiltext</span></label>
-                        </div>
-                        <div class="formTextarea">
-                            <textarea id="profiltext" name="profiltext"></textarea>
-                        </div>
-                        <div class="formLabel">
-                            <label for="profilbild">Profilbild</label>
-                        </div>
-                        <div class="formFile">
-                            <input type="file" id="profilbild" name="profilbild">
-                        </div>
-                    </fieldset>
+                    <form>
+                        <header>
+                            <h2>Neuen Autor registrieren</h2>
+                        </header>
+                        <fieldset class="autor">
+                            <legend>Autor</legend>
+                            <div class="titleBox">
+                                <label for="radioButtonHerr" class="formLabel">Herr
+                                    <input type="radio" id="radioButtonHerr" name="title" value="Herr" required
+                                           class="formRadioButton" checked>
+                                </label>
+                            </div>
+                            <div class="titleBox">
+                                <label for="radioButtonFrau" class="formLabel">Frau
+                                    <input type="radio" id="radioButtonFrau" name="title" value="Frau" required
+                                           class="formRadioButton">
+                                </label>
+                            </div>
+                            <div class="formLabel">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="formInput">
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="formLabel">
+                                <label for="mail">E-mail</label>
+                            </div>
+                            <div class="formInput">
+                                <input type="email" id="mail" name="mail" required>
+                            </div>
+                            <div class="formLabel">
+                                <label for="website">Website</label>
+                            </div>
+                            <div class="formInput">
+                                <input type="url" id="website" name="website" required>
+                            </div>
+                            <div class="formLabel">
+                                <label for="birthday">Geburtsdatum</label>
+                            </div>
+                            <div class="formInput">
+                                <input placeholder="" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                                       id="birthday" name="birthday" required>
+                            </div>
+                            <div class="formLabel">
+                                <label for="nationality">Nationalität</label>
+                            </div>
+                            <div class="formSelect">
+                                <select id="nationality" name="nationality" required>
+                                    <option value="" disabled selected>-- Wählen --</option>
+                                    <option>Switzerland</option>
+                                    <option>Deutschland</option>
+                                    <option>Frankreich</option>
+                                    <option>Italien</option>
+                                    <option>Österreich</option>
+                                </select>
+                            </div>
+                            <div class="formLabel">
+                                <label for="profiltext"><span>Profiltext</span></label>
+                            </div>
+                            <div class="formTextarea">
+                                <textarea id="profiltext" name="profiltext"></textarea>
+                            </div>
+                            <div class="formLabel">
+                                <label for="profilbild">Profilbild</label>
+                            </div>
+                            <div class="formFile">
+                                <input type="file" id="profilbild" name="profilbild">
+                            </div>
+                        </fieldset>
 
-                    <fieldset class="rechtliches">
-                        <legend>Rechtliches</legend>
-                        <div class="formCheckbox">
-                            <label>
-                                <input type="checkbox" name="rechtliches1" value="rechtliches1" required>
-                                Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
-                            </label>
-                        </div>
-                        <div class="formCheckbox">
-                            <label>
-                                <input type="checkbox" name="rechtliches2" value="rechtliches2" required>
-                                Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
-                            </label>
-                        </div>
-                        <div class="formCheckbox">
-                            <label>
-                                <input type="checkbox" name="rechtliches3" value="rechtliches3" required>
-                                Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-                                eingereichte Medien Bilder nicht manipuliert wurden</label>
-                        </div>
-                    </fieldset>
+                        <fieldset class="rechtliches">
+                            <legend>Rechtliches</legend>
+                            <div class="formCheckbox">
+                                <label>
+                                    <input type="checkbox" name="rechtliches1" value="rechtliches1" required>
+                                    Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
+                                </label>
+                            </div>
+                            <div class="formCheckbox">
+                                <label>
+                                    <input type="checkbox" name="rechtliches2" value="rechtliches2" required>
+                                    Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
+                                </label>
+                            </div>
+                            <div class="formCheckbox">
+                                <label>
+                                    <input type="checkbox" name="rechtliches3" value="rechtliches3" required>
+                                    Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
+                                    eingereichte Medien Bilder nicht manipuliert wurden</label>
+                            </div>
+                        </fieldset>
 
-                    <div>
-                        <button type="submit" name="create" value="create">Account anlegen</button>
-                        <button type="reset" name="delete" value="delete">Eingaben zurücksetzen</button>
-                    </div>
+                        <div>
+                            <button type="submit" name="create" value="create">Account anlegen</button>
+                            <button type="reset" name="delete" value="delete">Eingaben zurücksetzen</button>
+                        </div>
 
-                </form>
-
+                    </form>
+                </article>
             </section>
         </div>
     </main>
 </div>
 
-<footer>
+<footer class="site">
     <div class="footer">
         <address>
             <p id="footerp1">Bahnhofstrasse 42, 8000 Zürich</p>
         </address>
 
-        <p id="footerp2"><a href="">055 444 33 22</a> <a href="">info@wikipraktika.com</a></p>
+        <p id="footerp2"><a href="tel:">055 444 33 22</a> <a href="mailto:">info@wikipraktika.com</a></p>
 
         <p id="footerp3">
             Alle Inhalte von Wikipraktika stehen unter der
