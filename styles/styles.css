@@ -17,14 +17,11 @@ header.site {
 }
 
 .logo {
-    float: left;
     margin-left: 10px;
 }
 
 header h1 {
     color: #ffffff;
-    margin-left: 10px;
-    float: left;
     font-size: 3rem;
     line-height: 1px;
 }
@@ -187,7 +184,6 @@ h4 {
 figure.text {
     width: 25%;
     height: auto;
-    float: left;
     margin: 10px 20px 20px 0;
     min-width: 200px;
 }
