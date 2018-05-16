@@ -8,7 +8,7 @@ body {
 }
 
 /*header*/
-header {
+header.site {
     background-color: #0160A0;
     height: 75px;
     position: relative;
@@ -37,6 +37,10 @@ header h1 {
 
 a:link {
     color: #0160A0;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /*navigation*/
@@ -180,7 +184,7 @@ h4 {
 }
 
 /*1. Taschenrechner*/
-figure {
+figure.text {
     width: 25%;
     height: auto;
     float: left;
@@ -201,6 +205,11 @@ figcaption {
 
 a.figlink {
     color: black;
+}
+
+figure {
+    width: 100%;
+    margin: 0 0;
 }
 
 /*2. Demonstration*/
@@ -398,10 +407,6 @@ legend {
     display: inline-block;
 }
 
-/*input:required:focus {*/
-    /*border: 1px solid red;*/
-/*}*/
-
 button {
     background-color: #0160A0;
     color: white;
@@ -413,7 +418,7 @@ button {
 }
 
 /*Footer*/
-footer {
+footer.site {
     background-color: #0160A0;
     height: auto;
     padding: 10px 10px 5px 10px;
