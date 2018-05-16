@@ -274,7 +274,7 @@ tr:nth-child(even)  {
 /*6. iPhone calculator tricks*/
 .video iframe {
     width: 100%;
-    height: calc(56.25vw - 1rem );
+    height: calc(56.25vw - 10.5rem);
 }
 
 /*7. beste und schlechteste TR*/
