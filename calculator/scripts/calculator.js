@@ -1,6 +1,7 @@
+/**
+ * core
+ */
 let calculator = {
-
-    //var
     numberButtons: null,
     operators: null,
     commands: null,
@@ -10,8 +11,6 @@ let calculator = {
     term1: "",
     term2: "",
 
-
-    //UI
     setTerm: function(value){
         this.term1 += value;
         this.input.value = this.term1;
@@ -40,6 +39,7 @@ let calculator = {
     },
 
     init: function () {
+
         this.numberButtons = document.querySelectorAll('.number');
         this.operators = document.querySelectorAll('.operator');
         this.commands = document.querySelectorAll('.command');
@@ -47,16 +47,43 @@ let calculator = {
         this.output = document.querySelector('.output');
         this.input = document.querySelector('.input');
 
+        // Setze Welcome Nachricht
+        this.initWelcomeMessage();
 
-
-        //Instantiate Event Listner
+        // Instantiate Event Listener
+        this.hideWelcomeMessage();
         this.instantiateEventsForTerm(this.numberButtons);
         this.instantiateEventForOperator(this.operators);
         this.instantiateEventForCommands(this.commands);
     },
 
+    /**
+     * Stelle die Welcome-Nachricht initial dar
+     */
+    initWelcomeMessage: function() {
+        document.querySelector("#output").value = "Welcome";
+    },
+
+    /**
+     * Blende die Welcome-Nachricht aus
+     */
+    hideWelcomeMessage: function() {
+        document.querySelectorAll("form button").forEach(function(elem) {
+            elem.addEventListener("click", function () {
+                if(document.querySelector("#output").value === "Welcome") {
+                    document.querySelector("#output").value = "";
+                }
+            });
+        });
+    },
+
+    /**
+     * Blabla
+     * @param elements
+     */
     instantiateEventsForTerm: function (elements) {
         let self = this;
+
         elements.forEach((elem) => {
             elem.addEventListener('click', function (event) {
                 self.setTerm(parseFloat(event.target.value));
@@ -77,7 +104,6 @@ let calculator = {
     instantiateEventForCommands: function (elements) {
         let self = this;
 
-
         elements.forEach((elem) => {
             elem.addEventListener('click', function (event) {
                 console.log(event.target.innerHTML);
@@ -90,8 +116,6 @@ let calculator = {
         })
     },
 
-
-    //Core
     calculate: function (term1, term2, operator) {
         let solution = 0;
 
@@ -115,7 +139,7 @@ let calculator = {
                 break;
             case '/':
                 if(term1 === 0){
-                    this.output.value = "You've derstoryed the universe, thx";
+                    this.output.value = "You've destroyed the universe, thx";
                     return;
                 }else{
                     solution = term2 / term1;
@@ -125,11 +149,16 @@ let calculator = {
         this.clear();
         this.setTerm(solution);
     }
-
-
 }
 
 
+=======
+}
+
+/**
+ * UI
+ */
+>>>>>>> 45270dd23351aa5013882d50c296ea7c86e2d0db
 window.addEventListener('load', function () {
     calculator.init();
 });
