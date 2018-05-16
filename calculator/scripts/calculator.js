@@ -3,8 +3,8 @@
  */
 let calculator = {
     numberButtons: null,
-    operators: null,
-    commands: null,
+    operatorButtons: null,
+    commandButtons: null,
     input: null,
     output: null,
     operator: "",
@@ -23,8 +23,8 @@ let calculator = {
             this.output.value = this.term1 + " " + elem.value;
             this.term2 = this.term1;
         }else {
-            this.operators = elem.value;
-            this.output.value = this.output.value.substr(0, this.output.value.length - 1) + this.operators;
+            this.operator = elem.value;
+            this.output.value = this.output.value.substr(0, this.output.value.length - 1) + this.operator;
         }
         this.input.value = "";
         this.term1 = "";
@@ -41,8 +41,8 @@ let calculator = {
     init: function () {
 
         this.numberButtons = document.querySelectorAll('.number');
-        this.operators = document.querySelectorAll('.operator');
-        this.commands = document.querySelectorAll('.command');
+        this.operatorButtons = document.querySelectorAll('.operator');
+        this.commandButtons = document.querySelectorAll('.command');
         this.input = document.querySelector('.input');
         this.output = document.querySelector('.output');
         this.input = document.querySelector('.input');
@@ -53,8 +53,8 @@ let calculator = {
         // Instantiate Event Listener
         this.hideWelcomeMessage();
         this.instantiateEventsForTerm(this.numberButtons);
-        this.instantiateEventForOperator(this.operators);
-        this.instantiateEventForCommands(this.commands);
+        this.instantiateEventForOperator(this.operatorButtons);
+        this.instantiateEventForCommands(this.commandButtons);
     },
 
     /**
@@ -149,11 +149,13 @@ let calculator = {
         this.clear();
         this.setTerm(solution);
     }
+
 }
 
 /**
  * UI
  */
+
 window.addEventListener('load', function () {
     calculator.init();
 });
