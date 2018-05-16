@@ -398,10 +398,6 @@ legend {
     display: inline-block;
 }
 
-/*input:required:focus {*/
-    /*border: 1px solid red;*/
-/*}*/
-
 button {
     background-color: #0160A0;
     color: white;
