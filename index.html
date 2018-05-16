@@ -15,7 +15,7 @@
     <a href=index.html><img class="logo alignLeft" src="media/logo-wikipraktika.svg" alt="logo-wikipraktika"></a>
     <h1 class="alignLeft">Wikipraktika</h1>
 </header>
-<div class="container">
+<main class="container">
 
     <h2>Navigation</h2>
     <nav class="navigation">
@@ -51,7 +51,7 @@
         </ul>
     </nav>
 
-    <main>
+    <section>
         <!-- Schriftgrössenwechsler: optionale Aufgabe -->
         <form id="font-size-form">
             <label for="font-slider">Schriftgrösse</label>
@@ -60,460 +60,415 @@
             <output name="font-size" id="font-size">1</output>
         </form>
 
-        <div class="main">
-            <section>
+        <header>
+            <h2>Taschenrechner</h2>
+        </header>
+        <article class="text">
+            <header>
+                <h3>Taschenrechner</h3>
+            </header>
+            <p> Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine,
+                mit deren Hilfe numerische Berechnungen ausgeführt werden können.
+                Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen auch symbolische Mathematik
+                mittels eines Computeralgebrasystems (CAS), können also etwa Gleichungen umstellen oder lösen.</p>
+            <p> Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und
+                LC-Displays als Anzeige und werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
+            <figure class="text alignLeft">
+                <img class="picture" src="media/900px-SCM_Marchant_calculator.jpg" alt="SCM Marchant calculator">
+                <figcaption>By <a class="figlink" href="https://commons.wikimedia.org/wiki/User:Bilby">Bilby</a> -
+                    Own work,
+                    <a class="figlink" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>,
+                    https://commons.wikimedia.org/w/index.php?curid=10980797
+                </figcaption>
+            </figure>
+            <header>
+                <h4>Geschichte</h4>
+            </header>
+            <p> Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach
+                tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und Rechenschiebern
+                befriedigt. Meist handelte es sich dabei um einfache Addiermaschinen. Auch
+                Vier-Spezies-Maschinen – also Rechenmaschinen, die Addition, Subtraktion, Multiplikation und
+                Division beherrschten – gab es in taschentauglicher Größe. Bekanntestes Beispiel ist die
+                Curta.</p>
+            <p> Vorläufer der elektronischen Taschenrechner waren elektronische Tischrechner, bei denen der
+                Integrationsgrad der Schaltungstechnik noch geringer war und die deshalb größere Dimensionen
+                aufwiesen.</p>
+            <p> Der erste elektronische, tatsächlich handflächengroße Taschenrechner wurde
+                <time datetime="1967">1967</time> von Texas Instruments entwickelt.[1] Ein 1,5 kg schwerer
+                Prototyp dieses ersten Taschenrechners ist heute in der Smithsonian Institution ausgestellt.
+                Auch dieser lief schon mit Batterien, frühere Rechner benötigten einen Stromanschluss. Die
+                ersten kommerziell vertriebenen Taschenrechner wurden <time datetime="1969">1969</time> und
+                <time datetime="1970">1970</time> von den japanischen Firmen Compucorp, Sanyo, Sharp und
+                Canon hergestellt. Intel entwickelte für die japanische Firma Busicom einen der ersten
+                Mikroprozessoren, den Intel 4004, der <time datetime="1971">1971</time> auf den Markt kam und in
+                dem Modell Busicom 141-PF verwendet wurde. Als erster Taschenrechner, der mit einem
+                Verkaufspreis von 10.000 Yen für die breite Masse erschwinglich war, gilt der
+                <time datetime="1972">1972</time> veröffentlichte Casio Mini.[2] <time datetime="1972">1972</time>
+                brachte Texas Instruments den Taschenrechner SR 10 mit dem eigenen Mikroprozessor TMS1000 heraus.
+                Diese Taschenrechner verfügten über wenig mehr als die vier Grundrechenarten.
+                <time datetime="1971">1971</time>  stellte Bowmar den ersten in den USA erhältlichen
+                Taschenrechner her (Bowmar 901B/„Bowmar Brain“, Maße: 131 mm ×77 mm × 37 mm). Er hatte vier
+                Funktionen und ein achtstelliges rotes LED-Display. Verkauft wurde er für 240 US$. Bowmar musste
+                <time datetime="1976">1976</time> schließen.</p>
+            <p> <time datetime="1972">1972</time> erschien mit dem HP-35 von Hewlett-Packard der erste
+                technisch-wissenschaftliche Taschenrechner mit trigonometrischen, logarithmischen und
+                Exponentialrechnungs-Funktionen. Er wurde ein Verkaufserfolg und leitete das Ende der damals
+                noch weit verbreiteten Rechenschieber ein. Einer seiner Entwickler war Steve Wozniak, der wenige
+                Jahre später das Unternehmen Apple mitgründete und als Computer-Ingenieur die Entwicklung des
+                Personal Computer maßgeblich beeinflusste.</p>
+            <p> Vor allem Hewlett Packard und Texas Instruments entwickelten ab
+                <time datetime="1974">1974</time> auch programmierbare Taschenrechner.</p>
+            <h4>Numerische Genauigkeit</h4>
+            <p> Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen
+                aufweisen, lassen sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche
+                Genauigkeiten und Auflösungen bei numerischen Berechnungen bestimmen. Die Gründe liegen in
+                den numerischen Näherungsverfahren (beispielsweise Horner-Schema und
+                CORDIC), mit denen beispielsweise transzendente Funktionen wie die Sinus-Funktion berechnet
+                werden. Genauer gesagt kommt es auf die Anzahl der abgespeicherten Koeffizienten für die
+                Funktionsapproximationen an: der dafür benötigte Speicherplatz war vor allem in der
+                Anfangszeit ein extremer Engpass. Diese kleinen Unterschiede in den Verfahren und
+                unterschiedliche Genauigkeiten lassen sich auch als Erkennungsmerkmal für eine bestimmte
+                Firmware verwenden.</p>
+            <p> Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen
+                Taschenrechnern voneinander abweichende Ergebnisse.</p>
+            <footer>
+                <small class="link">Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">
+                    de.wikipedia.org/wiki/Taschenrechner</a></small>
+            </footer>
+        </article>
+
+        <article class="calculator">
+            <header>
+                <h3>Demonstration</h3>
+            </header>
+            <figure>
+                <iframe
+                        src="calculator/index.html">
+                </iframe>
+                <figcaption>
+                    Casino Mini von 1972
+                </figcaption>
+            </figure>
+        </article>
+
+        <article class="video">
+            <header>
+                <h3>Bedienung des TI-Nspire CX CAS</h3>
+            </header>
+            <figure>
+                <video controls poster="media/ti-nspire-cx-cas.png">
+                    <source src="media/TI-Nspire%20CX%20CAS%203D%20Model.mp4" type="video/mp4">
+                    <source src="media/TI-Nspire%20CX%20CAS%203D%20Model.webm" type="video/webm">
+                    <track src="media/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="English">
+                </video>
+                <figcaption>
+                    <p>TI-Nspire CX CAS Demonstration</p>
+                    <p>Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
+                        <a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a></p>
+                </figcaption>
+            </figure>
+
+            <footer class="lastEdited">
+                <small>
+                    <span class="alignLeft">Zuletzt geändert von Philipp Graf</span>
+                    <span class="alignRight"><time datetime="2016-02-11 12:45">Donnerstag, 11. Februar 2016, 12:45</time>
+                    </span>
+                </small>
+                <div class="clearfix"></div>
+            </footer>
+        </article>
+
+        <article class="varianten">
+            <header>
+                <h3>Taschenrechnervarianten</h3>
+            </header>
+            <dl>
+                <dt>Einfach
+                    <dd>Grundrechenarten, Prozentrechnung</dd>
+                <dt>Finanzwirtschaft
+                    <dd>Zinsrechnung, ...</dd>
+                    <dd>zum Beispiel der „Klassiker“ HP-12C (hergestellt seit 1981), HP 17 B (II) (hergestellt seit 1988)</dd>
+                <dt>Boolesche Rechnungen
+                    <dd>Rechnen mit Dual-, Oktal- und Hexadezimalzahlen, z. B. TI Programmer)</dd>
+                <dt>Wissenschaftlich
+                    <dd>Winkelfunktionen, Logarithmus, mathematische Statistik, …</dd>
+                    <dd>zum Beispiel TI-30 (seit 1976 dieselbe Typbezeichnung für intern völlig unterschiedliche Geräte</dd>
+                <dt>Programmierbarer Taschenrechner</dt>
+                <dt>Grafikfähiger Taschenrechner
+                    <dd>Funktions-/Kurvendarstellung</dd>
+                    <dd>ab 1985 Geräte von Casio (fx-Serie, aktuelles Modell fx 9860G SD)</dd>
+                    <dd>1989 bis heute die HP-48-49-Reihe</dd>
+                    <dd>ab 1993 der TI-82 und seine Nachfolger</dd>
+                    <dd>aktuell der TI-84 Plus und TI-Nspire</dd>
+                    <dd>Grafikrechner sind typischerweise auch programmierbar.</dd>
+                <dt>Computeralgebra-Rechner
+                    <dd>grafikfähige Taschenrechner mit eingebautem Computeralgebra-Kern</dd>
+                    <dd>erstes verbreitetes Gerät war der HP-48 von Hewlett-Packard (ab 1989),
+                        spätere Geräte zum Beispiel TI-92(+) (ab 1995), TI-89 (ab
+                        1998) und Voyage 200 (ab 2002), TI-Nspire CAS (ab 2007)
+                        von Texas Instruments, ClassPad 300 von Casio, HP 49g+ von
+                        Hewlett-Packard.</dd>
+            </dl>
+            <small class="link">Taschenrechnervarianten, Source Wikipedia:
+                <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a>
+            </small>
+
+            <footer class="lastEdited">
+                <small>
+                    <span class="alignLeft">Zuletzt geändert von Gabriela Kant</span>
+                    <span class="alignRight"><time datetime="2016-02-11 10:09">Donnerstag, 11. Februar 2016, 10:09</time>
+                    </span>
+                </small>
+                <div class="clearfix"></div>
+            </footer>
+        </article>
+
+        <article class="table">
+            <header>
+                <h3>Zeitgewinn</h3>
+            </header>
+            <table>
+                <caption>Zeitgewinn durch Benutzung eines Taschenrechners</caption>
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">2-Stellen</th>
+                    <th scope="col">3-Stellen</th>
+                    <th scope="col">4-Stellen</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Addition / Subtraktion</th>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Multiplikation</th>
+                    <td rowspan="2">15</td>
+                    <td rowspan="2">45</td>
+                    <td>240</td>
+                </tr>
+                <tr>
+                    <th scope="row">Division</th>
+                    <td>210</td>
+                </tr>
+                <tr>
+                    <th scope="row">Modulo</th>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <th scope="row">Quersumme</th>
+                    <td colspan="2">1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Wurzelziehen</th>
+                    <td colspan="3">Kaum machbar von Hand</td>
+                </tr>
+                <tr>
+                    <th scope="row">Potenzieren</th>
+                    <td>25</td>
+                    <td>75</td>
+                    <td>550</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <object class="diagramm" data="media/zeitgewinn.svg" type="image/svg+xml" role="img"></object>
+            </figure>
+
+            <footer class="lastEdited">
+                <small>
+                    <span class="alignLeft">Zuletzt geändert von Leandra Gross</span>
+                    <span class="alignRight"><time datetime="2016-02-29 13:02">Freitag, 29. Februar 2016, 13:02</time>
+                    </span>
+                </small>
+                <div class="clearfix"></div>
+            </footer>
+        </article>
+
+        <article class="video">
+            <header>
+                <h3>iPhone calculator tricks</h3>
+            </header>
+            <figure>
+                <iframe
+                        src="https://www.youtube.com/embed/a7rcVgb41-0">
+                </iframe>
+                <figcaption>
+                    iPhone Calculator Tricks  on YouTube:
+                    <a href="https://youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a>
+                </figcaption>
+            </figure>
+
+            <footer class="lastEdited">
+                <small>
+                    <span class="alignLeft">Zuletzt geändert von Paul Sarner</span>
+                    <span class="alignRight"><time datetime="2016-02-10 18:38">Donnerstag, 10. Februar 2016, 18:38</time>
+                    </span>
+                </small>
+                <div class="clearfix"></div>
+            </footer>
+        </article>
+
+        <article class="text">
+            <header>
+                <h3>Die besten und schlechtesten Taschenrechner</h3>
+            </header>
+            <p>In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:</p>
+            <div class="bestworst">
+                <ol>
+                    <li>Casino UX5</li>
+                    <li>Casino TZZ</li>
+                    <li>Casino Basic</li>
+                </ol>
+            </div>
+
+            <p>Am schlechtesten schnitten die Geräte von HG ab:</p>
+            <div class="bestworst">
+                <ol start="76" reversed>
+                    <li>HG Productive</li>
+                    <li>HG Calc++</li>
+                    <li>HG GO-ON</li>
+                </ol>
+            </div>
+            <footer class="lastEdited">
+                <small>
+                    <span class="alignLeft">Zuletzt geändert von Petra Summer</span>
+                    <span class="alignRight"><time datetime="2016-02-11 14:13">Donnerstag, 11. Februar 2016, 14:13</time>
+                    </span>
+                </small>
+                <div class="clearfix"></div>
+            </footer>
+        </article>
+
+        <aside>
+            <header>
+                <h3>Taschenrechner suchen nach Modell</h3>
+            </header>
+            <form>
+                <input class="formSearchBar" type="search" id="calculator" name="calculator" list="calculatorList"
+                       pattern="[Mm]exico Instrument TI 30|[Mm]exico Instrument TI 32|[Mm]exico Instrument D\*D|
+                       [Cc]asino UX5|[Cc]asino TZZ|[Cc]asino Basic|[Hh]G Calc\+\+|[Hh]G Productive|[Hh]G GO-ON">
+                <datalist id="calculatorList">
+                    <option value="Mexico Instrument TI 30">Mexico Instrument TI 30</option>
+                    <option value="Mexico Instrument TI 32">Mexico Instrument TI 32</option>
+                    <option value="Mexico Instrument D\*D">Mexico Instrument D*D</option>
+                    <option value="Casino UX5">Casino UX5</option>
+                    <option value="Casino TZZ">Casino TZZ</option>
+                    <option value="Casino Basic">Casino Basic</option>
+                    <option value="HG Calc\+\+">HG Calc++</option>
+                    <option value="HG Productive">HG Productive</option>
+                    <option value="HG GO-ON">HG GO-ON</option>
+                </datalist>
+                <button type="button" name="search" value="search"><span class="searchIcon"></span>Search</button>
+            </form>
+
+            <form>
                 <header>
-                    <h2>Taschenrechner</h2>
+                    <h2>Neuen Autor registrieren</h2>
                 </header>
-                <article class="text">
-                    <header>
-                        <h3>Taschenrechner</h3>
-                    </header>
-                    <p> Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine,
-                        mit deren Hilfe numerische Berechnungen ausgeführt werden können.
-                        Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen auch symbolische Mathematik
-                        mittels eines Computeralgebrasystems (CAS), können also etwa Gleichungen umstellen oder lösen.</p>
-                    <p> Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und
-                        LC-Displays als Anzeige und werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
-
-                    <figure class="text alignLeft">
-                        <img class="picture" src="media/900px-SCM_Marchant_calculator.jpg" alt="SCM Marchant calculator">
-                        <figcaption>By <a class="figlink" href="https://commons.wikimedia.org/wiki/User:Bilby">Bilby</a> - Own work, <a class="figlink"
-                                                                                                                                        href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>,
-                            https://commons.wikimedia.org/
-                            w/index.php?curid=10980797
-                        </figcaption>
-                    </figure>
-
-                    <header>
-                        <h4>Geschichte</h4>
-                    </header>
-                    <p> Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach
-                        tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und Rechenschiebern
-                        befriedigt. Meist handelte es sich dabei um einfache Addiermaschinen. Auch
-                        Vier-Spezies-Maschinen – also Rechenmaschinen, die Addition, Subtraktion, Multiplikation und
-                        Division beherrschten – gab es in taschentauglicher Größe. Bekanntestes Beispiel ist die
-                        Curta.</p>
-                    <p> Vorläufer der elektronischen Taschenrechner waren elektronische Tischrechner, bei denen der
-                        Integrationsgrad der Schaltungstechnik noch geringer war und die deshalb größere Dimensionen
-                        aufwiesen.</p>
-                    <p> Der erste elektronische, tatsächlich handflächengroße Taschenrechner wurde
-                        <time datetime="1967">1967</time> von Texas Instruments entwickelt.[1] Ein 1,5 kg schwerer
-                        Prototyp dieses ersten Taschenrechners ist heute in der Smithsonian Institution ausgestellt.
-                        Auch dieser lief schon mit Batterien, frühere Rechner benötigten einen Stromanschluss. Die
-                        ersten kommerziell vertriebenen Taschenrechner wurden <time datetime="1969">1969</time> und
-                        <time datetime="1970">1970</time> von den japanischen Firmen Compucorp, Sanyo, Sharp und
-                        Canon hergestellt. Intel entwickelte für die japanische Firma Busicom einen der ersten
-                        Mikroprozessoren, den Intel 4004, der <time datetime="1971">1971</time> auf den Markt kam und in
-                        dem Modell Busicom 141-PF verwendet wurde. Als erster Taschenrechner, der mit einem
-                        Verkaufspreis von 10.000 Yen für die breite Masse erschwinglich war, gilt der
-                        <time datetime="1972">1972</time> veröffentlichte Casio Mini.[2] <time datetime="1972">1972</time>
-                        brachte Texas Instruments den Taschenrechner SR 10 mit dem eigenen Mikroprozessor TMS1000 heraus.
-                        Diese Taschenrechner verfügten über wenig mehr als die vier Grundrechenarten.
-                        <time datetime="1971">1971</time>  stellte Bowmar den ersten in den USA erhältlichen
-                        Taschenrechner her (Bowmar 901B/„Bowmar Brain“, Maße: 131 mm ×77 mm × 37 mm). Er hatte vier
-                        Funktionen und ein achtstelliges rotes LED-Display. Verkauft wurde er für 240 US$. Bowmar musste
-                        <time datetime="1976">1976</time> schließen.</p>
-                    <p> <time datetime="1972">1972</time> erschien mit dem HP-35 von Hewlett-Packard der erste
-                        technisch-wissenschaftliche Taschenrechner mit trigonometrischen, logarithmischen und
-                        Exponentialrechnungs-Funktionen. Er wurde ein Verkaufserfolg und leitete das Ende der damals
-                        noch weit verbreiteten Rechenschieber ein. Einer seiner Entwickler war Steve Wozniak, der wenige
-                        Jahre später das Unternehmen Apple mitgründete und als Computer-Ingenieur die Entwicklung des
-                        Personal Computer maßgeblich beeinflusste.</p>
-                    <p> Vor allem Hewlett Packard und Texas Instruments entwickelten ab
-                        <time datetime="1974">1974</time> auch programmierbare Taschenrechner.</p>
-                    <h4>Numerische Genauigkeit</h4>
-                    <p> Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen
-                        aufweisen, lassen sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche
-                        Genauigkeiten und Auflösungen bei numerischen Berechnungen bestimmen. Die Gründe liegen in
-                        den numerischen Näherungsverfahren (beispielsweise Horner-Schema und
-                        CORDIC), mit denen beispielsweise transzendente Funktionen wie die Sinus-Funktion berechnet
-                        werden. Genauer gesagt kommt es auf die Anzahl der abgespeicherten Koeffizienten für die
-                        Funktionsapproximationen an: der dafür benötigte Speicherplatz war vor allem in der
-                        Anfangszeit ein extremer Engpass. Diese kleinen Unterschiede in den Verfahren und
-                        unterschiedliche Genauigkeiten lassen sich auch als Erkennungsmerkmal für eine bestimmte
-                        Firmware verwenden.</p>
-                    <p> Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen
-                        Taschenrechnern voneinander abweichende Ergebnisse.</p>
-
-                    <footer>
-                        <small class="link">Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">
-                            de.wikipedia.org/wiki/Taschenrechner</a></small>
-                    </footer>
-
-                </article>
-            </section>
-
-            <section>
-                <article class="calculator">
-                    <header>
-                        <h3>Demonstration</h3>
-                    </header>
-                    <figure>
-                        <iframe
-                                src="calculator/index.html">
-                        </iframe>
-                        <figcaption>
-                            <div class="caption">
-                                Casino Mini von 1972
-                            </div>
-                        </figcaption>
-                    </figure>
-                </article>
-            </section>
-
-            <section>
-                <article class="video">
-                    <header>
-                        <h3>Bedienung des TI-Nspire CX CAS</h3>
-                    </header>
-                    <figure>
-                        <video controls poster="media/ti-nspire-cx-cas.png">
-                            <source src="media/TI-Nspire CX CAS 3D Model.mp4" type="video/mp4">
-                            <source src="media/TI-Nspire CX CAS 3D Model.webm" type="video/webm">
-                            <track src="media/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="English">
-                        </video>
-                        <figcaption>
-                            <aside class="caption">
-                                TI-Nspire CX CAS Demonstration
-                            </aside>
-                        </figcaption>
-                    </figure>
-
-                    <footer>
-                        <small class="link">
-                            Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
-                            <a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a>
-                        </small>
-
-                        <aside class="lastEdited">
-                            <span class="alignLeft">Zuletzt geändert von Philipp Graf</span>
-                            <span class="alignRight"><time datetime="2016-02-11 12:45">Donnerstag, 11. Februar 2016,
-                                12:45</time>
-                            </span>
-                            <div class="clearfix"></div>
-                        </aside>
-                    </footer>
-                </article>
-
-            </section>
-
-            <section>
-                <article class="varianten">
-                    <header>
-                        <h3>Taschenrechnervarianten</h3>
-                    </header>
-                    <dl>
-                        <dt>Einfach
-                            <dd>Grundrechenarten, Prozentrechnung</dd>
-                        </dt>
-                        <dt>Finanzwirtschaft
-                            <dd>Zinsrechnung, ...</dd>
-                            <dd>zum Beispiel der „Klassiker“ HP-12C (hergestellt seit 1981), HP 17 B (II) (hergestellt seit 1988)</dd>
-                        </dt>
-                        <dt>Boolesche Rechnungen
-                            <dd>Rechnen mit Dual-, Oktal- und Hexadezimalzahlen, z. B. TI Programmer)</dd>
-                        </dt>
-                        <dt>Wissenschaftlich
-                            <dd>Winkelfunktionen, Logarithmus, mathematische Statistik, …</dd>
-                            <dd>zum Beispiel TI-30 (seit 1976 dieselbe Typbezeichnung für intern völlig unterschiedliche Geräte</dd>
-                        </dt>
-                        <dt>Programmierbarer Taschenrechner</dt>
-                        <dt>Grafikfähiger Taschenrechner
-                            <dd>Funktions-/Kurvendarstellung</dd>
-                            <dd>ab 1985 Geräte von Casio (fx-Serie, aktuelles Modell fx 9860G SD)</dd>
-                            <dd>1989 bis heute die HP-48-49-Reihe</dd>
-                            <dd>ab 1993 der TI-82 und seine Nachfolger</dd>
-                            <dd>aktuell der TI-84 Plus und TI-Nspire</dd>
-                            <dd>Grafikrechner sind typischerweise auch programmierbar.</dd>
-                        </dt>
-                        <dt>Computeralgebra-Rechner
-                            <dd>grafikfähige Taschenrechner mit eingebautem Computeralgebra-Kern</dd>
-                            <dd>erstes verbreitetes Gerät war der HP-48 von Hewlett-Packard (ab 1989),
-                            spätere Geräte zum Beispiel TI-92(+) (ab 1995), TI-89 (ab
-                            1998) und Voyage 200 (ab 2002), TI-Nspire CAS (ab 2007)
-                            von Texas Instruments, ClassPad 300 von Casio, HP 49g+ von
-                            Hewlett-Packard.</dd>
-                        </dt>
-                    </dl>
-                    
-                    <footer>
-                        <small class="link">Taschenrechnervarianten, Source Wikipedia:
-                            <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a>
-                        </small>
-
-                        <aside class="lastEdited">
-                            <span class="alignLeft">Zuletzt geändert von Gabriela Kant</span>
-                            <span class="alignRight"><time datetime="2016-02-11 10:09">Donnerstag, 11. Februar 2016,
-                                10:09</time>
-                            </span>
-                            <div class="clearfix"></div>
-                        </aside>
-                    </footer>
-                </article>
-            </section>
-
-            <section>
-                <article class="table">
-                    <header>
-                        <h3>Zeitgewinn</h3>
-                    </header>
-                    <table>
-                        <caption>Zeitgewinn durch Benutzung eines Taschenrechners</caption>
-                        <thead>
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">2-Stellen</th>
-                            <th scope="col">3-Stellen</th>
-                            <th scope="col">4-Stellen</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">Addition / Subtraktion</th>
-                            <td>4</td>
-                            <td>8</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Multiplikation</th>
-                            <td rowspan="2">15</td>
-                            <td rowspan="2">45</td>
-                            <td>240</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Division</th>
-                            <td>210</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Modulo</th>
-                            <td>5</td>
-                            <td>20</td>
-                            <td>65</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Quersumme</th>
-                            <td colspan="2">1</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Wurzelziehen</th>
-                            <td colspan="3">Kaum machbar von Hand</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Potenzieren</th>
-                            <td>25</td>
-                            <td>75</td>
-                            <td>550</td>
-                        </tr>
-                        </tbody>
-                    </table>
-
-                    <figure>
-                        <object class="diagramm" data="media/zeitgewinn.svg" type="image/svg+xml" role="img"></object>
-                    </figure>
-
-                    <footer>
-                        <aside class="lastEdited">
-                            <span class="alignLeft">Zuletzt geändert von Leandra Gross</span>
-                            <span class="alignRight"><time datetime="2016-02-29 13:02">Freitag, 29. Februar 2016,
-                                13:02</time>
-                            </span>
-                            <div class="clearfix"></div>
-                        </aside>
-                    </footer>
-                </article>
-            </section>
-
-            <section>
-                <article class="video">
-                    <header>
-                        <h3>iPhone calculator tricks</h3>
-                    </header>
-                    <figure>
-                        <iframe
-                                src="https://www.youtube.com/embed/a7rcVgb41-0">
-                        </iframe>
-                        <figcaption>
-                            <aside id="linkGrey">iPhone Calculator Tricks  on YouTube:
-                                <a href="https://youtube.com/watch?v=a7rcVgb41-0">
-                                    youtube.com/watch?v=a7rcVgb41-0</a>
-                            </aside>
-                        </figcaption>
-                    </figure>
-
-                    <footer>
-                                                <aside class="lastEdited">
-                            <span class="alignLeft">Zuletzt geändert von Paul Sarner</span>
-                            <span class="alignRight"><time datetime="2016-02-10 18:38">Donnerstag, 10. Februar 2016,
-                                18:38</time>
-                            </span>
-                            <div class="clearfix"></div>
-                        </aside>
-                    </footer>
-                </article>
-            </section>
-
-            <section>
-                <article class="text">
-                    <header>
-                        <h3>Die besten und schlechtesten Taschenrechner</h3>
-                    </header>
-                    <p>In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:</p>
-                    <div class="bestworst">
-                        <ol>
-                            <li>Casino UX5</li>
-                            <li>Casino TZZ</li>
-                            <li>Casino Basic</li>
-                        </ol>
+                <fieldset class="autor">
+                    <legend>Autor</legend>
+                    <div class="titleBox">
+                        <label for="radioButtonHerr" class="formLabel">Herr
+                            <input type="radio" id="radioButtonHerr" name="title" value="Herr" required
+                                   class="formRadioButton" checked>
+                        </label>
                     </div>
-
-                    <p>Am schlechtesten schnitten die Geräte von HG ab:</p>
-                    <div class="bestworst">
-                        <ol start="76" reversed>
-                            <li>HG Productive</li>
-                            <li>HG Calc++</li>
-                            <li>HG GO-ON</li>
-                        </ol>
+                    <div class="titleBox">
+                        <label for="radioButtonFrau" class="formLabel">Frau
+                            <input type="radio" id="radioButtonFrau" name="title" value="Frau" required
+                                   class="formRadioButton">
+                        </label>
                     </div>
-                    <footer>
-                        <aside class="lastEdited">
-                            <span class="alignLeft">Zuletzt geändert von Petra Summer</span>
-                            <span class="alignRight"><time datetime="2016-02-11 14:13">Donnerstag, 11. Februar 2016,
-                                14:13</time>
-                            </span>
-                            <div class="clearfix"></div>
-                        </aside>
-                    </footer>
-                </article>
-            </section>
+                    <div class="formLabel">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="formInput">
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="formLabel">
+                        <label for="mail">E-mail</label>
+                    </div>
+                    <div class="formInput">
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+                    <div class="formLabel">
+                        <label for="website">Website</label>
+                    </div>
+                    <div class="formInput">
+                        <input type="url" id="website" name="website" required>
+                    </div>
+                    <div class="formLabel">
+                        <label for="birthday">Geburtsdatum</label>
+                    </div>
+                    <div class="formInput">
+                        <input placeholder="" type="text" id="birthday" name="birthday" required>
+                    </div>
+                    <div class="formLabel">
+                        <label for="nationality">Nationalität</label>
+                    </div>
+                    <div class="formSelect">
+                        <select id="nationality" name="nationality" required>
+                            <option value="" disabled selected>-- Wählen --</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Deutschland">Deutschland</option>
+                            <option value="Frankreich">Frankreich</option>
+                            <option value="Italien">Italien</option>
+                            <option value="Österreich">Österreich</option>
+                        </select>
+                    </div>
+                    <div class="formLabel">
+                        <label for="profiltext"><span>Profiltext</span></label>
+                    </div>
+                    <div class="formTextarea">
+                        <textarea id="profiltext" name="profiltext"></textarea>
+                    </div>
+                    <div class="formLabel">
+                        <label for="profilbild">Profilbild</label>
+                    </div>
+                    <div class="formFile">
+                        <input type="file" id="profilbild" name="profilbild">
+                    </div>
+                </fieldset>
 
-            <section>
-                <article>
-                    <header>
-                        <h3>Taschenrechner suchen nach Modell</h3>
-                    </header>
-                    <form>
-                        <input class="formSearchBar" type="search" id="calculator" name="calculator" list="calculatorList"
-                               pattern="[Mm]exico Instrument TI 30|[Mm]exico Instrument TI 32|[Mm]exico Instrument D\*D|
-                               [Cc]asino UX5|[Cc]asino TZZ|[Cc]asino Basic|[Hh]G Calc\+\+|[Hh]G Productive|[Hh]G GO-ON">
-                        <datalist id="calculatorList">
-                            <option>Mexico Instrument TI 30</option>
-                            <option>Mexico Instrument TI 32</option>
-                            <option>Mexico Instrument D*D</option>
-                            <option>Casino UX5</option>
-                            <option>Casino TZZ</option>
-                            <option>Casino Basic</option>
-                            <option>HG Calc++</option>
-                            <option>HG Productive</option>
-                            <option>HG GO-ON</option>
-                        </datalist>
-                        <button type="button" name="search" value="search"><span class="searchIcon"></span>Search</button>
-                    </form>
+                <fieldset class="rechtliches">
+                    <legend>Rechtliches</legend>
+                    <div class="formCheckbox">
+                        <label>
+                            <input type="checkbox" name="rechtliches1" value="rechtliches1" required>
+                            Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
+                        </label>
+                    </div>
+                    <div class="formCheckbox">
+                        <label>
+                            <input type="checkbox" name="rechtliches2" value="rechtliches2" required>
+                            Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
+                        </label>
+                    </div>
+                    <div class="formCheckbox">
+                        <label>
+                            <input type="checkbox" name="rechtliches3" value="rechtliches3" required>
+                            Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
+                            eingereichte Medien Bilder nicht manipuliert wurden</label>
+                    </div>
+                </fieldset>
 
-                    <form>
-                        <header>
-                            <h2>Neuen Autor registrieren</h2>
-                        </header>
-                        <fieldset class="autor">
-                            <legend>Autor</legend>
-                            <div class="titleBox">
-                                <label for="radioButtonHerr" class="formLabel">Herr
-                                    <input type="radio" id="radioButtonHerr" name="title" value="Herr" required
-                                           class="formRadioButton" checked>
-                                </label>
-                            </div>
-                            <div class="titleBox">
-                                <label for="radioButtonFrau" class="formLabel">Frau
-                                    <input type="radio" id="radioButtonFrau" name="title" value="Frau" required
-                                           class="formRadioButton">
-                                </label>
-                            </div>
-                            <div class="formLabel">
-                                <label for="name">Name</label>
-                            </div>
-                            <div class="formInput">
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="formLabel">
-                                <label for="mail">E-mail</label>
-                            </div>
-                            <div class="formInput">
-                                <input type="email" id="mail" name="mail" required>
-                            </div>
-                            <div class="formLabel">
-                                <label for="website">Website</label>
-                            </div>
-                            <div class="formInput">
-                                <input type="url" id="website" name="website" required>
-                            </div>
-                            <div class="formLabel">
-                                <label for="birthday">Geburtsdatum</label>
-                            </div>
-                            <div class="formInput">
-                                <input placeholder="" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
-                                       id="birthday" name="birthday" required>
-                            </div>
-                            <div class="formLabel">
-                                <label for="nationality">Nationalität</label>
-                            </div>
-                            <div class="formSelect">
-                                <select id="nationality" name="nationality" required>
-                                    <option value="" disabled selected>-- Wählen --</option>
-                                    <option>Switzerland</option>
-                                    <option>Deutschland</option>
-                                    <option>Frankreich</option>
-                                    <option>Italien</option>
-                                    <option>Österreich</option>
-                                </select>
-                            </div>
-                            <div class="formLabel">
-                                <label for="profiltext"><span>Profiltext</span></label>
-                            </div>
-                            <div class="formTextarea">
-                                <textarea id="profiltext" name="profiltext"></textarea>
-                            </div>
-                            <div class="formLabel">
-                                <label for="profilbild">Profilbild</label>
-                            </div>
-                            <div class="formFile">
-                                <input type="file" id="profilbild" name="profilbild">
-                            </div>
-                        </fieldset>
+                <div>
+                    <button type="submit" name="create" value="create">Account anlegen</button>
+                    <button type="reset" name="delete" value="delete">Eingaben zurücksetzen</button>
+                </div>
 
-                        <fieldset class="rechtliches">
-                            <legend>Rechtliches</legend>
-                            <div class="formCheckbox">
-                                <label>
-                                    <input type="checkbox" name="rechtliches1" value="rechtliches1" required>
-                                    Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
-                                </label>
-                            </div>
-                            <div class="formCheckbox">
-                                <label>
-                                    <input type="checkbox" name="rechtliches2" value="rechtliches2" required>
-                                    Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
-                                </label>
-                            </div>
-                            <div class="formCheckbox">
-                                <label>
-                                    <input type="checkbox" name="rechtliches3" value="rechtliches3" required>
-                                    Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-                                    eingereichte Medien Bilder nicht manipuliert wurden</label>
-                            </div>
-                        </fieldset>
-
-                        <div>
-                            <button type="submit" name="create" value="create">Account anlegen</button>
-                            <button type="reset" name="delete" value="delete">Eingaben zurücksetzen</button>
-                        </div>
-
-                    </form>
-                </article>
-            </section>
-        </div>
-    </main>
-</div>
+            </form>
+        </aside>
+    </section>
+</main>
 
 <footer class="site">
     <div class="footer">

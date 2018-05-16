@@ -3,7 +3,7 @@
  */
 const calculator = {
   calc: function (term1, term2, operator) {
-        'use strict'
+        'use strict';
         let solution = 0;
 
         if(term2 === ''){
@@ -52,8 +52,8 @@ const calculatorUI = {
   operator: "",
 
   init: function (calculator) {
-    'use stirct'
-    this.calculator = calculator
+    'use strict';
+    this.calculator = calculator;
     this.numberButtons = document.querySelectorAll('.number');
     this.operatorButtons = document.querySelectorAll('.operator');
     this.commandButtons = document.querySelectorAll('.command');
@@ -75,7 +75,7 @@ const calculatorUI = {
    * Stelle die Welcome-Nachricht initial dar
    */
   initWelcomeMessage: function() {
-    'use stirct'
+    'use strict';
     document.querySelector("#output").value = "Welcome";
   },
 
@@ -83,7 +83,7 @@ const calculatorUI = {
    * Blende die Welcome-Nachricht aus
    */
   hideWelcomeMessage: function() {
-    'use stirct'
+    'use strict';
     const self = this;
     document.querySelectorAll("form button").forEach(function(elem) {
       elem.addEventListener("click", function () {
@@ -99,29 +99,29 @@ const calculatorUI = {
    * @param elements
    */
   instantiateEventsForTerm: function (elements) {
-    'use stirct'
+    'use strict';
     let self = this;
 
     elements.forEach((elem) => {
       elem.addEventListener('click', function (event) {
         self.setTerm(parseFloat(event.target.value));
-      })
-    })
+      });
+    });
   },
 
   instantiateEventForOperator: function (elements) {
-    'use stirct'
+    'use strict';
     let self = this;
 
     elements.forEach((elem) => {
       elem.addEventListener('click', function (event) {
         self.setOperator(event.target);
-      })
-    })
+      });
+    });
   },
 
   instantiateEventForCommands: function (elements) {
-    'use stirct'
+    'use strict';
     let self = this;
     elements.forEach((elem) => {
       elem.addEventListener('click', function (event) {
@@ -132,18 +132,18 @@ const calculatorUI = {
           self.clear();
           self.setTerm(result);
         }
-      })
-    })
+      });
+    });
   },
 
   setTerm: function(value){
-    'use stirct'
+    'use strict';
     this.term1 += value;
     this.input.value = this.term1;
   },
 
   setOperator: function (elem) {
-    'use stirct'
+    'use strict';
     if(this.operator === ''){
       this.operator = elem.value;
       this.output.value = this.term1 + " " + elem.value;
@@ -158,17 +158,17 @@ const calculatorUI = {
   },
 
   clear: function () {
-    'use strict'
+    'use strict';
     this.output.value = "";
     this.input.value = "";
     this.term1 = "";
     this.term2 = "";
     this.operator = "";
   }
-}
+};
 
 window.addEventListener('load', function () {
-    'use strict'
+    'use strict';
     calculatorUI.init(calculator);
 
 });
