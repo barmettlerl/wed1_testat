@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124559a7-6fe8-4c6b-96f1-b065404a3eeb" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/scripts/calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/scripts/calculator.js" afterDir="false" />
+>>>>>>> e8c563e3e9b7ed8899cc94bbfb684d715169cdfc
+>>>>>>> fb7d9ede7ec48a86ac80cd60709747d2e99629c5
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,6 +32,27 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+=======
+            <state relative-caret-position="42">
+              <caret line="123" column="57" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculator.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/calculator/scripts/calculator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculator/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> fb7d9ede7ec48a86ac80cd60709747d2e99629c5
             <state relative-caret-position="153">
               <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
             </state>
@@ -66,16 +96,20 @@
       <find>black-leather-texture.jpg</find>
       <find>mail</find>
       <find>rol</find>
-      <find>article</find>
       <find>svg</find>
       <find>align</find>
       <find>figure</find>
       <find>role</find>
       <find>dl</find>
+<<<<<<< HEAD
       <find>img</find>
       <find>picture</find>
       <find>float</find>
       <find>font-size-form</find>
+=======
+      <find>article</find>
+      <find>time</find>
+>>>>>>> fb7d9ede7ec48a86ac80cd60709747d2e99629c5
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,9 +150,16 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="972" />
+    <option name="height" value="1031" />
+=======
     <option name="x" value="910" />
     <option name="width" value="1020" />
     <option name="height" value="1032" />
+>>>>>>> e8c563e3e9b7ed8899cc94bbfb684d715169cdfc
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -211,10 +252,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="123577000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="123369000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="122910000" />
+>>>>>>> fb7d9ede7ec48a86ac80cd60709747d2e99629c5
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+>>>>>>> e8c563e3e9b7ed8899cc94bbfb684d715169cdfc
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49103943" visible="true" weight="0.16523464" />
@@ -561,8 +613,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="199">
           <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="42">
+          <caret line="123" column="57" selection-start-line="123" selection-start-column="57" selection-end-line="123" selection-end-column="57" />
+=======
+        <state relative-caret-position="120">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+>>>>>>> e8c563e3e9b7ed8899cc94bbfb684d715169cdfc
+>>>>>>> fb7d9ede7ec48a86ac80cd60709747d2e99629c5
         </state>
       </provider>
     </entry>
