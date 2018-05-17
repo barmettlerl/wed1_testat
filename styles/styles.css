@@ -4,7 +4,6 @@ body {
     font-size: 1rem;
     font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
     margin: 0;
-    counter-reset: section;
 }
 
 /*header*/
@@ -71,7 +70,6 @@ ul, ol, li, dt, dd {
 }
 
 a[hreflang="it"]::before {
-    /*content: url('/wed1_testat/media/flag-it.svg');*/
     background: url("../media/flag-it.svg");
     height: 0.8em;
     width: 16px;
@@ -102,10 +100,6 @@ a[hreflang="en"]::before {
 }
 
 /*main*/
-main {
-    width: 100%;
-}
-
 h3 {
     border-bottom: 1px solid black;
 
@@ -115,10 +109,6 @@ h3::before {
     counter-increment: section;
     content: counter(section);
     margin-right: 0.5rem;
-}
-
-.text {
-    margin-top: 10px;
 }
 
 p {
@@ -424,10 +414,6 @@ footer.site {
 
 #footerp1 {
     font-style: italic;
-}
-
-#footerp2 {
-
 }
 
 #footerp3 {
