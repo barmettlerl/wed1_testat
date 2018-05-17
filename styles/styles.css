@@ -58,10 +58,10 @@ ul, ol, li, dt, dd {
 
 .navigation {
     background: #F6F6F6;
-    width: calc(101% - 0px);
+    width: 102%;
     border: 1px solid #0160A0;
     display: block;
-    margin-left: -5px;
+    margin-left: -6px;
     margin-bottom: 30px;
 }
 
