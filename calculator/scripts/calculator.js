@@ -50,6 +50,7 @@ const calculatorUI = {
   term1: "",
   term2: "",
   operator: "",
+  blocked: false,
 
   init: function (calculator) {
     'use strict';
@@ -104,7 +105,9 @@ const calculatorUI = {
 
     elements.forEach((elem) => {
       elem.addEventListener('click', function (event) {
-        self.setTerm(parseFloat(event.target.value));
+          if(!self.blocked){
+              self.setTerm(parseFloat(event.target.value));
+          }
       });
     });
   },
@@ -113,9 +116,12 @@ const calculatorUI = {
     'use strict';
     let self = this;
 
+
     elements.forEach((elem) => {
       elem.addEventListener('click', function (event) {
-        self.setOperator(event.target);
+          if(!self.blocked) {
+              self.setOperator(event.target);
+          }
       });
     });
   },
@@ -127,8 +133,12 @@ const calculatorUI = {
       elem.addEventListener('click', function (event) {
         if(event.target.innerHTML === 'C'){
           self.clear();
+          self.blocked = false;
         }else if(event.target.innerHTML === '=' ){
           const result = calculator.calc(self.term1, self.term2, self.operator);
+          if(typeof result === 'string'){
+              self.blocked = true;
+          }
           self.clear();
           self.setTerm(result);
         }
