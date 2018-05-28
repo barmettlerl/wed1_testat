@@ -1,4 +1,3 @@
-
 /*document*/
 body {
     font-size: 1rem;
@@ -7,8 +6,13 @@ body {
     counter-reset: heading;
 }
 
+ul, ol, li, dt, dd {
+    padding:0;
+    margin:0;
+}
+
 /*header*/
-header.site {
+body > header {
     background-color: #0160A0;
     height: 75px;
     position: relative;
@@ -16,18 +20,19 @@ header.site {
     margin: 0;
 }
 
-.logo {
-    margin-left: 10px;
+header > a > img {
+    margin: 0 10px 0 10px;
+    float: left;
 }
 
-header h1 {
+body > header h1 {
     color: #ffffff;
     font-size: 3rem;
     line-height: 1px;
 }
 
 /*body*/
-.container{
+main{
     margin: 50px auto 5px auto;
     width: 80%;
 }
@@ -45,65 +50,56 @@ a:active {
 }
 
 /*navigation*/
-h2 {
-    font-size: 1.5em;
-    line-height: 1px;
+nav {
     margin-bottom: 30px;
 }
 
-ul, ol, li, dt, dd {
-    padding:0;
-    margin:0;
-}
-
-.navigation {
+nav ul {
     background: #F6F6F6;
-    width: 102%;
+    width: 101%;
     border: 1px solid #0160A0;
     display: block;
     margin-left: -6px;
-    margin-bottom: 30px;
-}
-
-.navigation ul {
     list-style-type: none;
     padding: 5px 0 5px 10px;
 }
 
-a[hreflang="it"]::before {
-    background: url("../media/flag-it.svg");
+nav ul:nth-child(1) {
+    border: none;
+    width: 90%;
+    padding: 0 0 0 20px;
+}
+
+a[hreflang]::before {
     height: 0.8em;
     width: 16px;
     background-size: 100% 100%;
     content: "";
     display: inline-block;
     margin-right: 3px;
+}
+
+a[hreflang="it"]::before {
+    background: url("../media/flag-it.svg");
+    content: "";
+    background-size: 100% 100%;
 }
 
 a[hreflang="fr"]::before {
     background: url("../media/flag-fr.svg");
-    height: 0.8em;
-    width: 16px;
-    background-size: 100% 100%;
     content: "";
-    display: inline-block;
-    margin-right: 3px;
+    background-size: 100% 100%;
 }
 
 a[hreflang="en"]::before {
     background: url("../media/flag-en.svg");
-    height: 0.8em;
-    width: 16px;
-    background-size: 100% 100%;
     content: "";
-    display: inline-block;
-    margin-right: 3px;
+    background-size: 100% 100%;
 }
 
 /*main*/
 h3 {
     border-bottom: 1px solid black;
-
 }
 
 h3::before {
@@ -112,7 +108,7 @@ h3::before {
     margin-right: 0.5rem;
 }
 
-p {
+article > p {
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -121,35 +117,8 @@ h4 {
     margin: 10px 0 10px 0;
 }
 
-.link > a, #linkGrey > a {
+figcaption > a  {
     color: black;
-}
-
-#linkGrey {
-    font-size: 0.8em;
-    margin-top: 10px;
-    color: gray;
-}
-
-/*aside*/
-.lastEdited {
-    font-style: italic;
-    border-style: dotted;
-    line-height: 22px;
-    padding: 0 5px;
-    margin: 20px 0 30px 0;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.alignLeft {
-    float: left;
-}
-
-.alignRight {
-    float: right;
 }
 
 /*Font-Size*/
@@ -170,9 +139,10 @@ figure.text {
     height: auto;
     margin: 10px 20px 20px 0;
     min-width: 200px;
+    float: left;
 }
 
-img.picture {
+figure > img {
     width: 100%;
     height: auto;
 }
@@ -192,10 +162,27 @@ figure {
     margin: 0 0;
 }
 
+/*article footer*/
+article > footer > div {
+    width:49%;
+    display:inline-block;
+}
+
+article > footer > div:last-child {
+    text-align:right;
+}
+
+article > footer {
+    font-style: italic;
+    padding: 5px 10px;
+    border-style: dotted;
+    margin-top: 10px;
+}
+
 /*2. Demonstration*/
 .calculator iframe {
     width: 66.7%;
-    height: calc(56.25vw - 1rem);
+    height: calc(56.25vw - 10px);
     background: url("../media/black-leather-texture.jpg");
     background-size: cover;
     border-radius: 7px;
@@ -211,13 +198,13 @@ video {
 }
 
 /*4. TR-Varianten*/
-.varianten dt {
+dt {
     list-style-type: none;
     color: #0160A0;
     font-weight: bold;
 }
 
-.varianten dd::before {
+dd::before {
     content: "⌖";
     padding-right: 5px;
     padding-left: 1rem;
@@ -257,19 +244,18 @@ tr:nth-child(even)  {
     background-color: #DCE6EF;
 }
 
-
-.diagramm {
+figure > object  {
     width: 100%;
 }
 
 /*6. iPhone calculator tricks*/
 .video iframe {
     width: 100%;
-    height: calc(56.25vw - 10.5rem);
+    height: calc(56.25vw - 80px);
 }
 
 /*7. beste und schlechteste TR*/
-.bestworst ol{
+ol{
     list-style-position: inside;
     margin-bottom: 10px;
 }
@@ -284,6 +270,15 @@ tr:nth-child(even)  {
     font-size: medium;
     padding-left: 5px;
     margin-bottom: 30px;
+}
+
+.searchIcon {
+    background: url("../media/icon-search.svg");
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-size: cover;
+    margin: 0 10px 0 0;
 }
 
 button {
@@ -302,15 +297,6 @@ button:hover {
 
 button:active {
     box-shadow: inset 0 0 15px #000000;
-}
-
-.searchIcon {
-    background: url("../media/icon-search.svg");
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-    background-size: cover;
-    margin: 0 10px 0 0;
 }
 
 fieldset {
@@ -334,7 +320,6 @@ legend {
     position: absolute;
     left: 35px;
 }
-
 
 .formLabel {
     margin-top: 20px;
@@ -382,6 +367,7 @@ legend {
     resize: none;
 }
 
+
 .formInput > .formFile {
     width: 100%;
     background-color: #F5F5F5;
@@ -399,33 +385,28 @@ legend {
 }
 
 /*Footer*/
-footer.site {
+body > footer {
     background-color: #0160A0;
     height: auto;
-    padding: 10px 10px 5px 10px;
 }
 
-.footer {
+body > footer > div {
     color: white;
     width: 80%;
     alignment: center;
     margin: auto;
-    padding-top: 1px;
+    padding: 1px 0 20px 0;
 }
 
-#footerp1 {
+address {
     font-style: italic;
 }
 
-#footerp3 {
-    font-size: 80%;
-}
-
-.footer a {
+body > footer > div > p > a:link, footer a {
     color: white;
 }
 
-.license {
+#licence {
     vertical-align: middle;
 }
 
